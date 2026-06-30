@@ -1,4 +1,4 @@
-# SecureScore — Technical POC Document
+# CreditLens — Technical POC Document
 ### Alternative Credit Scoring + Cybersecurity Layer | Fintech Portfolio Project
 
 ---
@@ -11,7 +11,7 @@ India has 500M people with zero credit history. Traditional CIBIL-based scoring 
 **Secondary Problem (2026 specific):**
 India's DPDP Act (effective June 2026) mandates that any personal financial data used for credit decisions must be encrypted, consent-driven, and auditable. Most alternative scoring systems being built today have NO security layer — making them non-compliant by default.
 
-**What SecureScore Solves:**
+**What CreditLens Solves:**
 - Scores unbanked users using behavioral alternative data (UPI, bills, app usage)
 - Does it with AES-256 encryption, anomaly detection, and DPDP audit built-in
 - Every score is explainable — no black box
@@ -56,7 +56,7 @@ India's DPDP Act (effective June 2026) mandates that any personal financial data
 ## 4. FILE STRUCTURE
 
 ```
-securescore/
+CreditLens/
 │
 ├── data/
 │   ├── generate_data.py          # Synthetic dataset generator (Faker)
@@ -80,7 +80,7 @@ securescore/
 │   └── app.py                    # Streamlit app (4 screens)
 │
 ├── models/
-│   ├── securescore_model.pkl     # Saved XGBoost model
+│   ├── CreditLens_model.pkl     # Saved XGBoost model
 │   └── scaler.pkl                # Saved feature scaler
 │
 ├── reports/
@@ -99,7 +99,7 @@ securescore/
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                      SECURESCORE POC                          │
+│                      CreditLens POC                          │
 │                                                               │
 │   ┌─────────────┐     ┌─────────────┐     ┌─────────────┐   │
 │   │  DATA       │     │  SCORING    │     │  SECURITY   │   │
@@ -364,4 +364,4 @@ Afternoon:
 
 ---
 
-*SecureScore POC | Built by Sakshi Singh | July 2026*
+*CreditLens POC | Built by Sakshi Singh | July 2026*
