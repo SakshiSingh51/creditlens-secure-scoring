@@ -1,0 +1,42 @@
+# Git files
+.git
+.gitignore
+.github
+
+# Python virtual environment
+.venv
+venv
+env
+ENV
+*/.venv
+*/venv
+
+# Python cache files
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Local database and data files
+**/*.db
+**/*.sqlite
+securescore/data/users_raw.csv
+
+# Security keys & secrets
+**/*.key
+.env
+**/encryption.key
+
+# Model artifacts and output reports
+**/*.pkl
+**/*.joblib
+securescore/reports/dpdp_report.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker configuration files
+Dockerfile
+.dockerignore
+docker-compose.yml
